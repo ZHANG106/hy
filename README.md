@@ -12,3 +12,8 @@ Study with shimian
 
 ## Application
     Applicable program
+-------------
+
+~~~python
+print('Let us start! \nFighting!')
+~~~    
