@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
+    <style>
+    body {
+      font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: calc(10px + 0.33vw);
+      -webkit-font-smoothing: antialiased;
+      padding: 5vh 10vw;
+      color: #121314;
+    }
+    h1 {
+      font-size: 4.5em;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.6em;
+      font-weight: 300;
+      line-height: 1.4;
+      max-width: 26em;
+    }
+    a {
+      text-decoration: none;
+      color: #121314;
+      position: relative;
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 60%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0;
+      transition: top 200ms cubic-bezier(0, .8, .13, 1);
+      background-color: rgba(79,192,141,0.5);
+    }
+    a:hover:after {
+      top: 0%;
+    }
+
+
+
+    </style>
+</head>
+<body>
+<h1>Contact me</h1>
+<form id="form_login" action="http://123.206.101.81:5000/register/in" method="post">
+    <div class="list">
+        <h2>Your info</h2>
+        <ul>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label">Your name</div>
+                    <div class="item-input-wrap">
+                        <input type="text" name="username2" id="username2" placeholder="example@example.com">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label">email</div>
+                    <div class="item-input-wrap">
+                        <input type="text" name="email" id="email" placeholder="example@example.com">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label">Phone_number</div>
+                    <div class="item-input-wrap">
+                        <input type="number" name="phone_number" id="phone_number" placeholder="188...">
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label">Consultation</div>
+                    <div class="item-input-wrap">
+                        <textarea name="consul" id="consul" rows="4" style="OVERFLOW:   hidden"></textarea>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</form>
+
+<script type="text/javascript">
+    var loginForm = document.getElementById('form_login');
+    function beforeSubmit() {
+        var username = document.getElementById('username2').value;
+        var email = document.getElementById('email').value;
+        var phone_number = document.getElementById('phone_number').value;
+        var info = document.getElementById('consul').value;
+        loginForm.submit()
+    }
+</script>
+<div class="list">
+    <ul>
+        <li><a class="item-link list-button" id="btn-submit" onclick="beforeSubmit()">Submit</a></li>
+        <li><a class="item-link list-button" href="http://123.206.101.81:5000/" target="_blank">Back</a></li>
+    </ul>
+
+
+</div>
+
+</body>
+</html>
