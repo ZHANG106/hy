@@ -8,6 +8,7 @@ class Solution:
         :param nums: 输入值是总台阶数
         :return: 输出值是走法
         '''
+
         res = 0
 
         return res
