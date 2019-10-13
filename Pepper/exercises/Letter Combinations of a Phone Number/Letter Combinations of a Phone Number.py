@@ -6,7 +6,7 @@ dic = {2: ['a', 'b', 'c'],
        7: ['p', 'q', 'r', 's'],
        8: ['t', 'u', 'v'],
        9: ['w', 'x', 'y', 'z']}
-number = input()
+number = list(set(input()))
 med1 = dic[int(number[0])]
 result = []
 for i in range(len(number)-1):
