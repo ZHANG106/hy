@@ -20,8 +20,8 @@ def letterCombinations(digits: str):
 
 if __name__ == '__main__':
     while 1:
+        chars = input()
         try:
-            chars = input()
             print(letterCombinations(chars))
         except Exception as e:
             print('输入不规范\t%s' % chars)
