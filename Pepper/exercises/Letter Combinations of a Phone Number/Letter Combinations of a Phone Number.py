@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 dic = {2: ['a', 'b', 'c'],
        3: ['d', 'e', 'f'],
        4: ['g', 'h', 'i'],
@@ -16,11 +15,3 @@ for i in range(len(number)-1):
         result += list(map(lambda x: x+letter, med1))
     med1 = result
 print(result)
-=======
-from typing import List
-
-
-class Solution:
-    def letterCombinations(self, digits:str)-> List[str]:
-        pass
->>>>>>> f783d39a902a2ad088f55676a7fa6e3a9eea20f1

@@ -9,7 +9,17 @@ gitclass Solution:
         :return: 输出值是走法
         '''
         res = 0
-
+        res1 = 1
+        res2 = 2
+        if nums == 1:
+            res = res1
+        elif nums == 2:
+            res = res2
+        else:
+            for i in range(nums-2):
+                res = res1 + res2
+                res1 = res2
+                res2 = res
         return res
 
 
