@@ -2,14 +2,14 @@
 
 一个关于天气数据的数据清洗和分析作业
 
-##Aim 
+## Aim 
 The aim of this assignment is to investigate and visualise data using Python as a data science tool. It will test your ability to: 
 1. read a data file in Python and extract related data from it; 
 2. use various graphical and non-graphical tools to perform data exploration, data wrangling and data analysis; 
 3. use basic tools for managing and processing data; and 
 4. communicate your findings in your report. 
 
-##Data 
+## Data 
 The dataset we will use comes from the TAO (Tropical Atmosphere Ocean) project, by the Pacific Marine Environmental Lab of the U.S. National Oceanic and Atmospheric Administration. This monitors the atmosphere in the tropical Pacific Ocean. 
 > The Tropical Atmosphere Ocean dataset we chose (TAO_2006.csv file) contains atmosphere data from a specific monitoring site: (2◦N,165◦E). 
 > We chose to investigate environment data from January until September 2006, where the measurements were taken every 10 minutes. 
