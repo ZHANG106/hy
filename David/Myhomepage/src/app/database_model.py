@@ -14,4 +14,3 @@ class User(db.Model):
     info = db.Column(db.String(2048), index=True)
     add_time = db.Column(
         db.DateTime(), index=True, default=datetime.now)  # 注册时间
-    is_activated = db.Column(db.Boolean, default=False, comment='用户是否激活')
