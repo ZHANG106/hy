@@ -1,2 +1,5 @@
+import numpy as np
+
+
 def rotate(matrix):
-    pass
+    return np.fliplr(matrix.T)
