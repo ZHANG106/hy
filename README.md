@@ -1,5 +1,5 @@
-# studywithsm
-Study with shimian
+# study
+Study
 
 ## David documentation and Pepper documentation
     Some programming exercises
